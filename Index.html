@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String Manipulation</h1>
+        <div id="app">
+            <input id="inputField" v-model="word" placeholder="Word"/>   
+                <button id="button" v-on:click="sayHello()" >
+                    Show It
+                </button>
+            <div id="outputField" v-if="word">
+                <ul>
+                    <li>{{message}}</li>
+                    <li>{{message1}}</li>
+                    <li>{{message2}}</li>
+                    <li>{{message3}}</li>
+                    <li>{{message4}}</li>
+                    <li>{{message5}}</li>
+                </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">{{message}}</li>
+                <li class="list-group-item list-group-item-light">{{message1}}</li>
+                <li class="list-group-item list-group-item-dark">{{message2}}</li>
+                <li class="list-group-item list-group-item-light">{{message3}}</li>
+                <li class="list-group-item list-group-item-dark">{{message4}}</li>
+                <li class="list-group-item list-group-item-light">{{message5}}</li>
+            </ul>
+        </div>
+    </div>
+<script src="Index.js"></script>
+</body>
+</html>
